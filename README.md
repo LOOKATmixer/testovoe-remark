@@ -1,7 +1,7 @@
 # Тестовое задание для компании REMARK
 =====================
 
-### [Ссылка на локальный проект](https://lookatmixer.github.io/testovoe-remark/)
+### [Ссылка на проект Github Pages](https://lookatmixer.github.io/testovoe-remark/)
 
 ## Технологии:
 
