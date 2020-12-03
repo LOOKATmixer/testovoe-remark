@@ -1,0 +1,11 @@
+@import url("./__item/news__item.css");
+@import url("./__item/_image/news__item_image.css");
+@import url("./__item/_description/news__item_description.css");
+@import url("./__learn-button/news__learn-button.css");
+
+.news {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}

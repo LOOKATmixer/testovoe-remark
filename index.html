@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Предложения и акции</title>
+  </head>
+  <body class="page">
+    <header class="section header">
+      <h1 class="header__title">Предложения и акции</h1>
+      <nav class="header__link">
+        <a href="#" class="header__link_previous swiper-button-prev"
+          ><img src="./images/nav-left.svg" alt="назад"
+        /></a>
+        <a href="#" class="header__link_next swiper-button-next"
+          ><img src="./images/nav-right.svg" alt="вперед"
+        /></a>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="swiper-container">
+        <section class="section news swiper-wrapper">
+          <div class="news__item swiper-slide">
+            <img
+              class="news__item_image"
+              src="./images/gorod.jpg"
+              alt="Карта привилегий «Новый город»"
+            />
+            <span class="news__item_description"
+              >Карта привилегий «Новый город»</span
+            >
+          </div>
+          <div class="news__item swiper-slide">
+            <img
+              class="news__item_image"
+              src="./images/taxi.jpg"
+              alt="Бесплатное такси в офис продаж Нового города"
+            />
+            <span class="news__item_description"
+              >Бесплатное такси в офис продаж Нового города</span
+            >
+          </div>
+          <div class="news__item swiper-slide">
+            <img
+              class="news__item_image"
+              src="./images/apart.jpg"
+              alt="Квартиры с отделкой от застройщика"
+            />
+            <span class="news__item_description"
+              >Квартиры с отделкой от застройщика</span
+            >
+          </div>
+        </section>
+      </div>
+      <button type="button" class="news__learn-button">Узнать больше</button>
+      <section class="section places">
+        <div class="place">
+          <img
+            class="place__image"
+            src="./images/district.jpg"
+            alt="Жилой Комплекс"
+          />
+          <h2 class="place__title">
+            Просторные квартиры с гардеробными &rarr;
+          </h2>
+          <div class="place__description">
+            <p class="place__text place__text_position-upper">
+              Жилой комплекс «Новый город» расположен в одном из самых динамично
+              развивающихся районов Обнинска - Заовражье. Несмотря на близость к
+              центру (5 минут езды до ТРК «Триумф Плаза»), место здесь тихое и
+              спокойное.
+            </p>
+            <p class="place__text place__text_position-lower">
+              Архитектура и дизайн комплекса — яркий пример удачного сочетания
+              классических традиций строительства с современными материалами и
+              технологиями. Территория микрорайона разделена на ряд
+              благоустроенных зон с детскими игровыми площадками, спортивными
+              тренажерами и прогулочными дорожками
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module">
+      import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
+
+      // init Swiper:
+      var mySwiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1280: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

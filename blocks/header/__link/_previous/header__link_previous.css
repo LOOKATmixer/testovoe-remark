@@ -1,0 +1,8 @@
+.header__link_previous {
+  margin: 0 4px;
+  transition: opacity 0.2s linear;
+}
+
+.header__link_previous:hover {
+  opacity: 0.4;
+}

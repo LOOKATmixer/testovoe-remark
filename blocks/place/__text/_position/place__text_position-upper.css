@@ -1,0 +1,8 @@
+.place__text_position-upper {
+}
+
+@media screen and (max-width: 800px) {
+  .place__text_position-upper {
+    margin: 0;
+  }
+}

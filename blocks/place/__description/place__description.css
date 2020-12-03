@@ -1,0 +1,15 @@
+.place__description {
+  grid-area: paragraph;
+  max-width: 648px;
+  align-self: start;
+  justify-self: start;
+  font-size: 13px;
+  line-height: 170%;
+}
+
+@media screen and (max-width: 768px) {
+  .place__description {
+    font-size: 12px;
+    line-height: 130%;
+  }
+}

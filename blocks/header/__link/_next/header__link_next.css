@@ -1,0 +1,8 @@
+.header__link_next {
+  margin: 0 4px;
+  transition: opacity 0.2s linear;
+}
+
+.header__link_next:hover {
+  opacity: 0.4;
+}

@@ -1,0 +1,11 @@
+.header__link {
+  margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .header__link {
+    position: absolute;
+    top: 290px;
+    left: 125px;
+  }
+}

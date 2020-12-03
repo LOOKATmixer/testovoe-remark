@@ -1,0 +1,19 @@
+.news__item_image {
+  max-width: 425px;
+  max-height: 212px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 993px) {
+  .news__item_image {
+    max-width: 336px;
+    max-height: 168px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .news__item_image {
+    max-width: 296px;
+    max-height: 148px;
+  }
+}

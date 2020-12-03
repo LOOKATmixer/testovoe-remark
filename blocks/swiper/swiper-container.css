@@ -1,0 +1,16 @@
+.swiper-container {
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .swiper-container {
+    max-width: 320px;
+  }
+}

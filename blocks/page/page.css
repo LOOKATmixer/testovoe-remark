@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0 59px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+@media screen and (max-width: 800px) {
+  .page {
+    margin: 0 36px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .page {
+    margin: 0 12px;
+  }
+}
