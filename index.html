@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Предложения и акции</title>
   </head>
   <body class="page">
@@ -81,34 +82,8 @@
         </div>
       </section>
     </main>
-    <script type="module">
-      const url = "./pages/index.css";
-      document.head.innerHTML += `<link type="text/css" rel="stylesheet" href=${url}>`;
-    </script>
-    <script type="module">
-      import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
-
-      // init Swiper:
-      var mySwiper = new Swiper(".swiper-container", {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1280: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./pages/index.js"></script>
   </body>
 </html>
