@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <title>Предложения и акции</title>
   </head>
   <body class="page">
@@ -82,6 +81,10 @@
         </div>
       </section>
     </main>
+    <script type="module">
+      const url = "./pages/index.css";
+      document.head.innerHTML += `<link type="text/css" rel="stylesheet" href=${url}>`;
+    </script>
     <script type="module">
       import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
 
